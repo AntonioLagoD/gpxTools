@@ -29,6 +29,9 @@ class Ui_MainWindow(object):
         self.checkSubcarpetas = QtWidgets.QCheckBox(self.centralwidget)
         self.checkSubcarpetas.setGeometry(QtCore.QRect(390, 740, 170, 40))
         self.checkSubcarpetas.setObjectName("checkSubcarpetas")
+        self.checkStump = QtWidgets.QCheckBox(self.centralwidget)
+        self.checkStump.setGeometry(QtCore.QRect(600, 740, 170, 40))
+        self.checkStump.setObjectName("checkStump")
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
@@ -40,6 +43,7 @@ class Ui_MainWindow(object):
         self.btnSeleccion.setText(_translate("MainWindow", "Seleccionar Carpeta"))
         self.btnProcesar.setText(_translate("MainWindow", "Procesar Carpeta(s)"))
         self.checkSubcarpetas.setText(_translate("MainWindow", "Procesar subcarpetas"))
+        self.checkStump.setText(_translate("MainWindow", "Filtrar Stump"))
 
 
 if __name__ == "__main__":

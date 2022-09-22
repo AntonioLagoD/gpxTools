@@ -63,6 +63,19 @@
      <string>Procesar subcarpetas</string>
     </property>
    </widget>
+    <widget class="QCheckBox" name="checkStump">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>740</y>
+      <width>170</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Filtrar Stump</string>
+    </property>
+   </widget>
   </widget>
  </widget>
  <resources/>

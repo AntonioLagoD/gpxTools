@@ -11,6 +11,7 @@ from .Ui_totalizadorKm import Ui_MainWindow
 import os
 from os.path import splitext
 import gpxpy
+import glob
 
 class clasePrincipal(QMainWindow, Ui_MainWindow):
     """
@@ -52,12 +53,17 @@ class clasePrincipal(QMainWindow, Ui_MainWindow):
         linea ='El total acumulado es de : {:.1f} km'.format(kmAcumulados)
         self.anadeLinea(linea)
         
-def processFolder(self, folder):
-        gpxList = [x for x in os.listdir(folder) if splitext(x)[1].lower() in {'.gpx'}]
+def processFolder(self, folder):        
+        # Si está checked checkStump
+        if self.checkStump.isChecked():
+            ruta = folder + "*_S.gpx"
+        else:
+            ruta = folder + "*.gpx"
+        gpxList = glob.glob(ruta)
         print("Se han encontrado {} tracks".format(len(gpxList)))
         kmCarpeta = 0
         for fileName in gpxList:
-            with open(folder+fileName, 'r') as gpx_file:
+            with open(fileName, 'r') as gpx_file:
                 gpx = gpxpy.parse(gpx_file)
                 for track in gpx.tracks:
                     kmTrack = track.length_3d() / 1000.0 
