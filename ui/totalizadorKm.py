@@ -55,8 +55,8 @@ class clasePrincipal(QMainWindow, Ui_MainWindow):
         
 def processFolder(self, folder):        
         # Si está checked checkStump
-        if self.checkStump.isChecked():
-            ruta = folder + "*_S.gpx"
+        if self.checkFilter.isChecked():            
+            ruta = folder + self.linePattern.text()
         else:
             ruta = folder + "*.gpx"
         gpxList = glob.glob(ruta)
