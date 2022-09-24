@@ -60,7 +60,8 @@ def processFolder(self, folder):
         else:
             ruta = folder + "*.gpx"
         gpxList = glob.glob(ruta)
-        print("Se han encontrado {} tracks".format(len(gpxList)))
+        self.anadeLinea("Se han encontrado {} tracks".format(len(gpxList)))
+        print("Se han encontrado {} tracks".format(len(gpxList)))           
         kmCarpeta = 0
         for fileName in gpxList:
             with open(fileName, 'r') as gpx_file:

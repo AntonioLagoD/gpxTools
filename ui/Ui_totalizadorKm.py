@@ -20,6 +20,8 @@ class Ui_MainWindow(object):
         self.listaTracks = QtWidgets.QListWidget(self.centralwidget)
         self.listaTracks.setGeometry(QtCore.QRect(10, 10, 1180, 720))
         self.listaTracks.setObjectName("listaTracks")
+        self.listaTracks.setAlternatingRowColors(True)
+        self.listaTracks.setStyleSheet("font: 12pt Arial")
         self.btnSeleccion = QtWidgets.QPushButton(self.centralwidget)
         self.btnSeleccion.setGeometry(QtCore.QRect(90, 740, 260, 40))
         self.btnSeleccion.setObjectName("btnSeleccion")
