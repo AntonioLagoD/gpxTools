@@ -8,6 +8,7 @@ from PyQt5.QtCore import pyqtSlot
 from PyQt5.QtWidgets import QMainWindow
 from PyQt5.QtWidgets import QFileDialog
 from .uiTotalizador import Ui_MainWindow
+from PyQt5.QtWidgets import QApplication, QPushButton, QWidget, QAction, QTabWidget, QVBoxLayout, QLabel
 import os
 from os.path import splitext
 import gpxpy
@@ -33,6 +34,7 @@ class clasePrincipal(QMainWindow, Ui_MainWindow):
         self.listaTracks.insertRow(self.listaTracks.rowCount())
         for arg in args:            
             item = QtWidgets.QTableWidgetItem(str(arg))
+            item.setFlags(item.flags() & ~QtCore.Qt.ItemIsEditable)
             self.listaTracks.setItem(self.listaTracks.rowCount()-1, col, item)
             if (col!=1):
                 item.setTextAlignment(132) #4--> center, 128 --> Vcenter
