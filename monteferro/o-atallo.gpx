@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<gpx version="1.1" creator="Trailforks.com" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<metadata>
+<name>O Atallo Trailforks Trail</name>
+<link href="https://www.trailforks.com/">
+<text>Trailforks</text>
+</link>
+</metadata>
+<trk>
+<name>
+O Atallo
+</name>
+<trkseg>
+<trkpt lat="42.15377" lon="-8.84417">
+<ele>138</ele>
+<time>2020-08-06T12:52:03-07:00</time>
+</trkpt>
+<trkpt lat="42.15363" lon="-8.84392">
+<ele>140</ele>
+<time>2020-08-06T12:52:04-07:00</time>
+</trkpt>
+<trkpt lat="42.15357" lon="-8.84379">
+<ele>140</ele>
+<time>2020-08-06T12:52:05-07:00</time>
+</trkpt>
+<trkpt lat="42.15349" lon="-8.8437">
+<ele>141</ele>
+<time>2020-08-06T12:52:06-07:00</time>
+</trkpt>
+<trkpt lat="42.15321" lon="-8.84357">
+<ele>139</ele>
+<time>2020-08-06T12:52:07-07:00</time>
+</trkpt>
+<trkpt lat="42.15284" lon="-8.84333">
+<ele>134</ele>
+<time>2020-08-06T12:52:08-07:00</time>
+</trkpt>
+<trkpt lat="42.1526" lon="-8.84314">
+<ele>131</ele>
+<time>2020-08-06T12:52:09-07:00</time>
+</trkpt>
+<trkpt lat="42.15254" lon="-8.84303">
+<ele>131</ele>
+<time>2020-08-06T12:52:10-07:00</time>
+</trkpt>
+<trkpt lat="42.15249" lon="-8.84283">
+<ele>128</ele>
+<time>2020-08-06T12:52:11-07:00</time>
+</trkpt>
+<trkpt lat="42.15236" lon="-8.8428">
+<ele>125</ele>
+<time>2020-08-06T12:52:12-07:00</time>
+</trkpt>
+<trkpt lat="42.15228" lon="-8.84287">
+<ele>125</ele>
+<time>2020-08-06T12:52:13-07:00</time>
+</trkpt>
+<trkpt lat="42.15224" lon="-8.84297">
+<ele>125</ele>
+<time>2020-08-06T12:52:14-07:00</time>
+</trkpt>
+<trkpt lat="42.15226" lon="-8.84319">
+<ele>125</ele>
+<time>2020-08-06T12:52:15-07:00</time>
+</trkpt>
+<trkpt lat="42.15216" lon="-8.84335">
+<ele>122</ele>
+<time>2020-08-06T12:52:16-07:00</time>
+</trkpt>
+<trkpt lat="42.15206" lon="-8.84345">
+<ele>113</ele>
+<time>2020-08-06T12:52:17-07:00</time>
+</trkpt>
+<trkpt lat="42.15191" lon="-8.84368">
+<ele>110</ele>
+<time>2020-08-06T12:52:18-07:00</time>
+</trkpt>
+<trkpt lat="42.15186" lon="-8.84367">
+<ele>110</ele>
+<time>2020-08-06T12:52:19-07:00</time>
+</trkpt>
+<trkpt lat="42.15171" lon="-8.84359">
+<ele>101</ele>
+<time>2020-08-06T12:52:20-07:00</time>
+</trkpt>
+<trkpt lat="42.15166" lon="-8.84355">
+<ele>101</ele>
+<time>2020-08-06T12:52:21-07:00</time>
+</trkpt>
+<trkpt lat="42.15157" lon="-8.84345">
+<ele>105</ele>
+<time>2020-08-06T12:52:22-07:00</time>
+</trkpt>
+<trkpt lat="42.15147" lon="-8.84339">
+<ele>97</ele>
+<time>2020-08-06T12:52:23-07:00</time>
+</trkpt>
+<trkpt lat="42.15131" lon="-8.84331">
+<ele>97</ele>
+<time>2020-08-06T12:52:24-07:00</time>
+</trkpt>
+<trkpt lat="42.15119" lon="-8.84331">
+<ele>90</ele>
+<time>2020-08-06T12:52:25-07:00</time>
+</trkpt>
+<trkpt lat="42.15111" lon="-8.84327">
+<ele>90</ele>
+<time>2020-08-06T12:52:26-07:00</time>
+</trkpt>
+<trkpt lat="42.15106" lon="-8.84319">
+<ele>91</ele>
+<time>2020-08-06T12:52:27-07:00</time>
+</trkpt>
+<trkpt lat="42.15096" lon="-8.84318">
+<ele>84</ele>
+<time>2020-08-06T12:52:28-07:00</time>
+</trkpt>
+<trkpt lat="42.1508" lon="-8.84311">
+<ele>84</ele>
+<time>2020-08-06T12:52:29-07:00</time>
+</trkpt>
+<trkpt lat="42.15053" lon="-8.84277">
+<ele>77</ele>
+<time>2020-08-06T12:52:30-07:00</time>
+</trkpt>
+<trkpt lat="42.15049" lon="-8.84276">
+<ele>77</ele>
+<time>2020-08-06T12:52:31-07:00</time>
+</trkpt>
+<trkpt lat="42.15033" lon="-8.8428">
+<ele>67</ele>
+<time>2020-08-06T12:52:32-07:00</time>
+</trkpt>
+<trkpt lat="42.15017" lon="-8.84293">
+<ele>65</ele>
+<time>2020-08-06T12:52:33-07:00</time>
+</trkpt>
+<trkpt lat="42.15012" lon="-8.84302">
+<ele>59</ele>
+<time>2020-08-06T12:52:34-07:00</time>
+</trkpt>
+<trkpt lat="42.15008" lon="-8.84335">
+<ele>59</ele>
+<time>2020-08-06T12:52:35-07:00</time>
+</trkpt>
+<trkpt lat="42.15005" lon="-8.8434">
+<ele>59</ele>
+<time>2020-08-06T12:52:36-07:00</time>
+</trkpt>
+<trkpt lat="42.15001" lon="-8.84341">
+<ele>59</ele>
+<time>2020-08-06T12:52:37-07:00</time>
+</trkpt>
+<trkpt lat="42.14991" lon="-8.84347">
+<ele>59</ele>
+<time>2020-08-06T12:52:38-07:00</time>
+</trkpt>
+</trkseg>
+</trk>
+</gpx>

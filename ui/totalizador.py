@@ -7,7 +7,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtCore import pyqtSlot
 from PyQt5.QtWidgets import QMainWindow
 from PyQt5.QtWidgets import QFileDialog
-from .Ui_totalizadorKm import Ui_MainWindow
+from .uiTotalizador import Ui_MainWindow
 import os
 from os.path import splitext
 import gpxpy
@@ -25,8 +25,19 @@ class clasePrincipal(QMainWindow, Ui_MainWindow):
         """
         super(clasePrincipal, self).__init__(parent)
         self.setupUi(self)
-    def anadeLinea(self, linea):
-        self.listaTracks.addItem(linea)     
+        self.nTrack = 0
+        self.kmAcu = 0
+    def anadeLinea(self, *args):
+    #def anadeLinea(self, nTrack,fileName, kmTrack, kmCarpeta):
+        col = 0
+        self.listaTracks.insertRow(self.listaTracks.rowCount())
+        for arg in args:            
+            item = QtWidgets.QTableWidgetItem(str(arg))
+            self.listaTracks.setItem(self.listaTracks.rowCount()-1, col, item)
+            if (col!=1):
+                item.setTextAlignment(132) #4--> center, 128 --> Vcenter
+            col+=1
+        
     @pyqtSlot()
     def on_btnSeleccion_clicked(self):
         """
@@ -34,24 +45,23 @@ class clasePrincipal(QMainWindow, Ui_MainWindow):
         """
         global carpeta
         carpeta = QFileDialog.getExistingDirectory(self, 'Selecciona la carpeta') +'/'
-        self.anadeLinea('Se va a procesar la carpeta : {}'.format(carpeta)) 
+        #self.anadeLinea('Se va a procesar la carpeta : {}'.format(carpeta)) 
     
     @pyqtSlot()
     def on_btnProcesar_clicked(self):
         """
         Slot documentation goes here.
         """
-        kmAcumulados = 0
-        # First process initial folder
-        kmAcumulados += processFolder(self, carpeta) 
-        # If selected, traverse down all folders from iniPath
+        self.nTrack = 0
+        self.kmAcu = 0
+        processFolder(self, carpeta)
         if self.checkSubcarpetas.isChecked():
             for root, dirs, files in os.walk(carpeta):
                 for dir in dirs:
                     folder = os.path.join(root, dir) +'/'
-                    kmAcumulados += processFolder(self, folder)
-        linea ='El total acumulado es de : {:.1f} km'.format(kmAcumulados)
-        self.anadeLinea(linea)
+                    processFolder(self, folder)
+        linea ='El total acumulado es de : {:.1f} km'.format(self.kmAcu)
+        #self.anadeLinea(linea)
         
 def processFolder(self, folder):        
         # Si está checked checkStump
@@ -60,7 +70,7 @@ def processFolder(self, folder):
         else:
             ruta = folder + "*.gpx"
         gpxList = glob.glob(ruta)
-        self.anadeLinea("Se han encontrado {} tracks".format(len(gpxList)))
+        #self.anadeLinea("Se han encontrado {} tracks".format(len(gpxList)))
         print("Se han encontrado {} tracks".format(len(gpxList)))           
         kmCarpeta = 0
         for fileName in gpxList:
@@ -68,7 +78,10 @@ def processFolder(self, folder):
                 gpx = gpxpy.parse(gpx_file)
                 for track in gpx.tracks:
                     kmTrack = track.length_3d() / 1000.0 
-                    kmCarpeta += kmTrack 
-                    linea = "Nombre de archivo: {} -- Longitud: {:5.1f} km -- Acumulado: {:5.1f} km".format(fileName, kmTrack, kmCarpeta)
-                    self.anadeLinea(linea)                    
-        return kmCarpeta 
+                    self.kmAcu += kmTrack
+                    #linea = "Nombre de archivo: {} -- Longitud: {:5.1f} km -- Acumulado: {:5.1f} km".format(fileName, kmTrack, kmCarpeta)
+                    self.nTrack+=1
+                    self.anadeLinea(self.nTrack,fileName, "{:5.1f}".format(kmTrack), "{:5.1f}".format(self.kmAcu))
+        for i in range(4):
+            self.listaTracks.resizeColumnToContents(i)
+        

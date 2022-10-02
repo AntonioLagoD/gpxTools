@@ -1,0 +1,1 @@
+pyuic5 totalizador.ui -o uiTotalizador.py

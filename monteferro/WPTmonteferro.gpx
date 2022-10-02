@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gpx xmlns:wptx1="http://www.garmin.com/xmlschemas/WaypointExtension/v1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd http://www.garmin.com/xmlschemas/WaypointExtension/v1 http://www.garmin.com/xmlschemas/WaypointExtensionv1.xsd http://www.qlandkarte.org/xmlschemas/v1.1 http://www.qlandkarte.org/xmlschemas/v1.1/ql-extensions.xsd http://www.cluetrust.com/XML/GPXDATA/1/0 http://www.cluetrust.com/Schemas/gpxdata10.xsd" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:rmc="urn:net:trekbuddy:1.0:nmea:rmc" version="1.1" xmlns:gpxdata="http://www.cluetrust.com/XML/GPXDATA/1/0" xmlns="http://www.topografix.com/GPX/1/1" creator="QMapShack 1.14.1 http://www.qlandkarte.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tp1="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns:ql="http://www.qlandkarte.org/xmlschemas/v1.1">
+ <metadata>
+  <name>WPTMonteferro</name>
+  <author>
+   <name>WPTMonteferro</name>
+   <link href="https://www.wikiloc.com/wikiloc/user.do?id=125233">
+    <text>anlago on Wikiloc</text>
+   </link>
+  </author>
+  <link href="https://www.wikiloc.com/mountain-biking-trails/wptmonteferro-53033326">
+   <text>WPTMonteferro on Wikiloc</text>
+  </link>
+  <time>2020-07-19T14:05:09.000Z</time>
+ </metadata>
+ <wpt lat="42.15330300" lon="-8.84552600">
+  <ele>130</ele>
+  <time>2020-07-19T14:05:09.000Z</time>
+  <name>DH Monteferro</name>
+  <extensions>
+   <ql:key>c8bfc6c04f35a7c1905b9d49d253277b</ql:key>
+   <ql:flags>262</ql:flags>
+   <ql:bubble xoff="-320" width="300" yoff="-150"/>
+   <ql:history>
+    <ql:event>
+     <ql:icon>://icons/48x48/Start.png</ql:icon>
+     <ql:time>2020-08-06T19:33:57.216Z</ql:time>
+     <ql:comment>Versión inicial</ql:comment>
+    </ql:event>
+    <ql:event>
+     <ql:icon>://icons/48x48/EditText.png</ql:icon>
+     <ql:time>2020-08-06T19:38:44.225Z</ql:time>
+     <ql:comment>Se cambió el nombre</ql:comment>
+    </ql:event>
+   </ql:history>
+   <wptx1:WaypointExtension/>
+  </extensions>
+ </wpt>
+ <wpt lat="42.15364900" lon="-8.84522800">
+  <ele>134</ele>
+  <time>2020-07-19T14:05:09.000Z</time>
+  <name>A Batería</name>
+  <extensions>
+   <ql:key>319b58730d0aa67b299ff66d513e2114</ql:key>
+   <ql:flags>262</ql:flags>
+   <ql:bubble xoff="-320" width="300" yoff="-150"/>
+   <ql:history>
+    <ql:event>
+     <ql:icon>://icons/48x48/Start.png</ql:icon>
+     <ql:time>2020-08-06T19:33:57.217Z</ql:time>
+     <ql:comment>Versión inicial</ql:comment>
+    </ql:event>
+    <ql:event>
+     <ql:icon>://icons/48x48/EditText.png</ql:icon>
+     <ql:time>2020-08-06T19:38:05.155Z</ql:time>
+     <ql:comment>Se cambió el nombre</ql:comment>
+    </ql:event>
+   </ql:history>
+   <wptx1:WaypointExtension/>
+  </extensions>
+ </wpt>
+ <wpt lat="42.15416800" lon="-8.84489000">
+  <ele>138</ele>
+  <time>2020-07-19T14:05:09.000Z</time>
+  <name>Can Morto</name>
+  <extensions>
+   <ql:key>9c85e8d904cb7c884e5f51d9b3c7fda8</ql:key>
+   <ql:flags>262</ql:flags>
+   <ql:bubble xoff="-320" width="300" yoff="-150"/>
+   <ql:history>
+    <ql:event>
+     <ql:icon>://icons/48x48/Start.png</ql:icon>
+     <ql:time>2020-08-06T19:33:57.217Z</ql:time>
+     <ql:comment>Versión inicial</ql:comment>
+    </ql:event>
+    <ql:event>
+     <ql:icon>://icons/48x48/EditText.png</ql:icon>
+     <ql:time>2020-08-06T19:36:51.386Z</ql:time>
+     <ql:comment>Se cambió el nombre</ql:comment>
+    </ql:event>
+   </ql:history>
+   <wptx1:WaypointExtension/>
+  </extensions>
+ </wpt>
+ <wpt lat="42.15363100" lon="-8.84308500">
+  <ele>136</ele>
+  <time>2020-07-19T14:05:09.000Z</time>
+  <name>O Atallo</name>
+  <extensions>
+   <ql:key>adfc28a46c597dfc5844b48c4cda4821</ql:key>
+   <ql:flags>262</ql:flags>
+   <ql:bubble xoff="-320" width="300" yoff="-150"/>
+   <ql:history>
+    <ql:event>
+     <ql:icon>://icons/48x48/Start.png</ql:icon>
+     <ql:time>2020-08-06T19:33:57.217Z</ql:time>
+     <ql:comment>Versión inicial</ql:comment>
+    </ql:event>
+    <ql:event>
+     <ql:icon>://icons/48x48/EditText.png</ql:icon>
+     <ql:time>2020-08-06T19:39:54.417Z</ql:time>
+     <ql:comment>Se cambió el nombre</ql:comment>
+    </ql:event>
+   </ql:history>
+   <wptx1:WaypointExtension/>
+  </extensions>
+ </wpt>
+ <wpt lat="42.15339800" lon="-8.84332600">
+  <ele>139</ele>
+  <time>2020-07-19T14:05:09.000Z</time>
+  <name>T6</name>
+  <extensions>
+   <ql:key>b6896d20921d0c29ca97220f4de76653</ql:key>
+   <ql:flags>256</ql:flags>
+   <ql:bubble xoff="-320" width="300" yoff="-150"/>
+   <wptx1:WaypointExtension/>
+  </extensions>
+ </wpt>
+ <wpt lat="42.15288700" lon="-8.84330700">
+  <ele>135</ele>
+  <time>2020-07-19T14:05:09.000Z</time>
+  <name>T7</name>
+  <extensions>
+   <ql:key>e52c964d8104f7b74a26c189490b5012</ql:key>
+   <ql:flags>256</ql:flags>
+   <ql:bubble xoff="-320" width="300" yoff="-150"/>
+   <wptx1:WaypointExtension/>
+  </extensions>
+ </wpt>
+ <extensions>
+  <ql:key>133180301af8e4bb8b0f14c1a545d85e</ql:key>
+  <ql:sortingRoadbook>0</ql:sortingRoadbook>
+  <ql:sortingFolder>0</ql:sortingFolder>
+  <ql:correlation>1</ql:correlation>
+  <ql:invalidDataOk>0</ql:invalidDataOk>
+ </extensions>
+</gpx>
