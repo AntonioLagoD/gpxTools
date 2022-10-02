@@ -5,10 +5,8 @@ Module implementing clasePrincipal.
 """
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtCore import pyqtSlot
-from PyQt5.QtWidgets import QMainWindow
-from PyQt5.QtWidgets import QFileDialog
+from PyQt5.QtWidgets import QMainWindow, QFileDialog
 from .uiTotalizador import Ui_MainWindow
-from PyQt5.QtWidgets import QApplication, QPushButton, QWidget, QAction, QTabWidget, QVBoxLayout, QLabel
 import os
 from os.path import splitext
 import gpxpy
