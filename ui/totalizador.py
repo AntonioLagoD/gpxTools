@@ -24,6 +24,7 @@ class clasePrincipal(QMainWindow, Ui_MainWindow):
         """
         super(clasePrincipal, self).__init__(parent)
         self.setupUi(self)
+        self.setWindowIcon(QtGui.QIcon('./ui/icon.png'))
         self.nTrack = 0
         self.kmAcu = 0
     def anadeLinea(self, *args):
