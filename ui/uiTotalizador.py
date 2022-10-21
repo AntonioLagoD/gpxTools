@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1280, 1024)
+        MainWindow.resize(1280, 800)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.btnSeleccion = QtWidgets.QPushButton(self.centralwidget)
@@ -34,7 +34,7 @@ class Ui_MainWindow(object):
         self.linePattern.setGeometry(QtCore.QRect(1070, 240, 171, 20))
         self.linePattern.setObjectName("linePattern")
         self.listaTracks = QtWidgets.QTableWidget(self.centralwidget)
-        self.listaTracks.setGeometry(QtCore.QRect(0, 0, 1051, 1021))
+        self.listaTracks.setGeometry(QtCore.QRect(0, 0, 1051, 1001))
         font = QtGui.QFont()
         font.setFamily("Arial")
         font.setPointSize(10)
@@ -92,6 +92,12 @@ class Ui_MainWindow(object):
         self.label.setAlignment(QtCore.Qt.AlignCenter)
         self.label.setObjectName("label")
         MainWindow.setCentralWidget(self.centralwidget)
+        self.statusBar = QtWidgets.QStatusBar(MainWindow)
+        self.statusBar.setToolTip("")
+        self.statusBar.setStatusTip("")
+        self.statusBar.setAutoFillBackground(True)
+        self.statusBar.setObjectName("statusBar")
+        MainWindow.setStatusBar(self.statusBar)
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)

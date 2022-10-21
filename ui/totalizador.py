@@ -27,6 +27,9 @@ class clasePrincipal(QMainWindow, Ui_MainWindow):
         self.setWindowIcon(QtGui.QIcon('./ui/icon.png'))
         self.nTrack = 0
         self.kmAcu = 0
+        self.statusBar.showMessage("Selecciona carpeta(s)")
+        #self.statusBar.update()
+        self.repaint()
     def anadeLinea(self, *args):
     #def anadeLinea(self, nTrack,fileName, kmTrack, kmCarpeta):
         col = 0
@@ -71,8 +74,10 @@ def processFolder(self, folder):
         else:
             ruta = folder + "*.gpx"
         gpxList = glob.glob(ruta)
-        #self.anadeLinea("Se han encontrado {} tracks".format(len(gpxList)))
-        print("Se han encontrado {} tracks".format(len(gpxList)))           
+        mensaje="Se han encontrado {} tracks".format(len(gpxList))
+        self.statusBar.showMessage(mensaje)
+        self.statusBar.repaint()
+        print(mensaje)        
         kmCarpeta = 0
         for fileName in gpxList:
             with open(fileName, 'r') as gpx_file:

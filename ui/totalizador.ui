@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1280</width>
-    <height>1024</height>
+    <height>800</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -85,7 +85,7 @@
       <x>0</x>
       <y>0</y>
       <width>1051</width>
-      <height>1021</height>
+      <height>1001</height>
      </rect>
     </property>
     <property name="font">
@@ -260,6 +260,17 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusBar">
+   <property name="toolTip">
+    <string extracomment="HOLA"/>
+   </property>
+   <property name="statusTip">
+    <string extracomment="Hola"/>
+   </property>
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
   </widget>
  </widget>
  <resources/>
