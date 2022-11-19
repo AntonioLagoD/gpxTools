@@ -7,6 +7,6 @@ if __name__ == "__main__":
     app = QApplication(sys.argv)
     app.setStyle(QStyleFactory.create('Fussion'))
     ui = clasePrincipal()
-    ui.show()
+    ui.showMaximized()
     app.exec_()
 
