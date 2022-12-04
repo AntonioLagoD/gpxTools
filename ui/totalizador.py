@@ -73,7 +73,7 @@ def processFolder(self, folder):
             ruta = folder + self.linePattern.text()
         else:
             ruta = folder + "*.gpx"
-        gpxList = glob.glob(ruta)
+        gpxList = sorted(glob.glob(ruta))
         mensaje="Se han encontrado {} tracks".format(len(gpxList))
         self.statusBar.showMessage(mensaje)
         self.statusBar.repaint()
